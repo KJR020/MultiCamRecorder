@@ -1,5 +1,5 @@
 import pytest
-from ffmpeg_recorder.recorder import create_command, run_commands
+from multi_cam_recorder import create_command, run_commands
 
 
 def test_create_command():
