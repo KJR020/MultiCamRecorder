@@ -32,20 +32,12 @@ def setup_logger():
 
 logger = setup_logger()
 
-# カメラのリスト
-# この部分は外部ファイルやコマンドライン引数から取得するように調整可能
-cameras = ["Surface Camera Front", "Surface Camera Rear", "OBS Virtual Camera"]
-
 
 # コマンドを生成する関数
 def create_command(camera_name):
     # ffmpeg コマンドのフォーマット
     cmd = f'ffmpeg -f dshow -i video="{camera_name}" -c:v libx264 -crf 23 -preset veryfast -segment_time 10 -strftime 1 "output_{camera_name.replace(" ", "_").lower()}_%Y%m%d_%H%M%S.mp4"'
     return cmd
-
-
-# コマンドリストの生成
-commands = [create_command(camera) for camera in cameras]
 
 
 def run_command(cmd):
@@ -61,3 +53,18 @@ def run_command(cmd):
                 logger.info(f"Command completed successfully: {cmd}")
     except Exception as e:
         logger.exception(f"Exception occurred while running command: {cmd}")
+
+
+if __name__ == "__main__":
+    # カメラのリスト
+    # この部分は外部ファイルやコマンドライン引数から取得するように調整可能
+    cameras = ["Surface Camera Front", "Surface Camera Rear", "OBS Virtual Camera"]
+    # コマンドリストの生成
+    commands = [create_command(camera) for camera in cameras]
+
+    # コマンドの実行
+    with ThreadPoolExecutor(max_workers=len(commands)) as executor:
+        futures = [executor.submit(run_command, cmd) for cmd in commands]
+
+        for future in futures:
+            future.result()
