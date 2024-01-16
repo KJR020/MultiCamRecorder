@@ -1431,3 +1431,184 @@ Input #0, dshow, from 'video=OBS Virtual Camera':
 Error opening output file `output_obs_virtual_camera_%Y%m%d_%H%M%S.mp4`.
 Error opening output files: Invalid argument
 
+2023-11-15 01:48:56,945 - ffmpeg_logger - ERROR - Error in command ffmpeg -f dshow -i video="OBS Virtual Camera" -c:v libx264 -crf 23 -preset veryfast -segment_time 10 -strftime 1 `output_obs_virtual_camera_%Y%m%d_%H%M%S.mp4`: ffmpeg version N-112750-g6d60cc7baf-20231114 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13.2.0 (crosstool-NG 1.25.0.232_c175b21)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20231114
+  libavutil      58. 32.100 / 58. 32.100
+  libavcodec     60. 33.100 / 60. 33.100
+  libavformat    60. 17.100 / 60. 17.100
+  libavdevice    60.  4.100 / 60.  4.100
+  libavfilter     9. 13.100 /  9. 13.100
+  libswscale      7.  6.100 /  7.  6.100
+  libswresample   4. 13.100 /  4. 13.100
+  libpostproc    57.  4.100 / 57.  4.100
+Input #0, dshow, from 'video=OBS Virtual Camera':
+  Duration: N/A, start: 375692.652000, bitrate: N/A
+  Stream #0:0: Video: rawvideo (NV12 / 0x3231564E), nv12, 1920x1080, 30 fps, 30 tbr, 10000k tbn
+[AVFormatContext @ 000001e566049b00] Unable to choose an output format for '`output_obs_virtual_camera_%Y%m%d_%H%M%S.mp4`'; use a standard extension for the filename or specify the format manually.
+[out#0 @ 000001e55f73ab80] Error initializing the muxer for `output_obs_virtual_camera_%Y%m%d_%H%M%S.mp4`: Invalid argument
+Error opening output file `output_obs_virtual_camera_%Y%m%d_%H%M%S.mp4`.
+Error opening output files: Invalid argument
+
+2023-11-15 01:48:57,242 - ffmpeg_logger - ERROR - Error in command ffmpeg -f dshow -i video="Surface Camera Front" -c:v libx264 -crf 23 -preset veryfast -segment_time 10 -strftime 1 `output_surface_camera_front_%Y%m%d_%H%M%S.mp4`: ffmpeg version N-112750-g6d60cc7baf-20231114 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13.2.0 (crosstool-NG 1.25.0.232_c175b21)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20231114
+  libavutil      58. 32.100 / 58. 32.100
+  libavcodec     60. 33.100 / 60. 33.100
+  libavformat    60. 17.100 / 60. 17.100
+  libavdevice    60.  4.100 / 60.  4.100
+  libavfilter     9. 13.100 /  9. 13.100
+  libswscale      7.  6.100 /  7.  6.100
+  libswresample   4. 13.100 /  4. 13.100
+  libpostproc    57.  4.100 / 57.  4.100
+[dshow @ 0000026359cd1940] Could not run graph (sometimes caused by a device already in use by other application)
+[in#0 @ 0000026359c89900] Error opening input: I/O error
+Error opening input file video=Surface Camera Front.
+Error opening input files: I/O error
+
+2023-11-15 01:49:05,914 - ffmpeg_logger - ERROR - Error in command ffmpeg -f dshow -i video="Surface Camera Rear" -c:v libx264 -crf 23 -preset veryfast -segment_time 10 -strftime 1 `output_surface_camera_rear_%Y%m%d_%H%M%S.mp4`: ffmpeg version N-112750-g6d60cc7baf-20231114 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13.2.0 (crosstool-NG 1.25.0.232_c175b21)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20231114
+  libavutil      58. 32.100 / 58. 32.100
+  libavcodec     60. 33.100 / 60. 33.100
+  libavformat    60. 17.100 / 60. 17.100
+  libavdevice    60.  4.100 / 60.  4.100
+  libavfilter     9. 13.100 /  9. 13.100
+  libswscale      7.  6.100 /  7.  6.100
+  libswresample   4. 13.100 /  4. 13.100
+  libpostproc    57.  4.100 / 57.  4.100
+Input #0, dshow, from 'video=Surface Camera Rear':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 640x360, 30 fps, 30 tbr, 10000k tbn
+[AVFormatContext @ 000001c399d4cb80] Unable to choose an output format for '`output_surface_camera_rear_%Y%m%d_%H%M%S.mp4`'; use a standard extension for the filename or specify the format manually.
+[out#0 @ 000001c399a45700] Error initializing the muxer for `output_surface_camera_rear_%Y%m%d_%H%M%S.mp4`: Invalid argument
+Error opening output file `output_surface_camera_rear_%Y%m%d_%H%M%S.mp4`.
+Error opening output files: Invalid argument
+Exiting normally, received signal 2.
+
+2024-01-16 23:11:00,588 - ffmpeg_logger - ERROR - Error in command ffmpeg -f dshow -i video="OBS Virtual Camera" -c:v libx264 -crf 23 -preset veryfast -segment_time 10 -strftime 1 `output_obs_virtual_camera_%Y%m%d_%H%M%S.mp4`: ffmpeg version N-112750-g6d60cc7baf-20231114 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13.2.0 (crosstool-NG 1.25.0.232_c175b21)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20231114
+  libavutil      58. 32.100 / 58. 32.100
+  libavcodec     60. 33.100 / 60. 33.100
+  libavformat    60. 17.100 / 60. 17.100
+  libavdevice    60.  4.100 / 60.  4.100
+  libavfilter     9. 13.100 /  9. 13.100
+  libswscale      7.  6.100 /  7.  6.100
+  libswresample   4. 13.100 /  4. 13.100
+  libpostproc    57.  4.100 / 57.  4.100
+Input #0, dshow, from 'video=OBS Virtual Camera':
+  Duration: N/A, start: 347485.738000, bitrate: N/A
+  Stream #0:0: Video: rawvideo (NV12 / 0x3231564E), nv12, 1920x1080, 30 fps, 30 tbr, 10000k tbn
+[AVFormatContext @ 000001b226728d80] Unable to choose an output format for '`output_obs_virtual_camera_%Y%m%d_%H%M%S.mp4`'; use a standard extension for the filename or specify the format manually.
+[out#0 @ 000001b226732880] Error initializing the muxer for `output_obs_virtual_camera_%Y%m%d_%H%M%S.mp4`: Invalid argument
+Error opening output file `output_obs_virtual_camera_%Y%m%d_%H%M%S.mp4`.
+Error opening output files: Invalid argument
+
+2024-01-16 23:11:02,026 - ffmpeg_logger - ERROR - Error in command ffmpeg -f dshow -i video="Surface Camera Rear" -c:v libx264 -crf 23 -preset veryfast -segment_time 10 -strftime 1 `output_surface_camera_rear_%Y%m%d_%H%M%S.mp4`: ffmpeg version N-112750-g6d60cc7baf-20231114 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13.2.0 (crosstool-NG 1.25.0.232_c175b21)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20231114
+  libavutil      58. 32.100 / 58. 32.100
+  libavcodec     60. 33.100 / 60. 33.100
+  libavformat    60. 17.100 / 60. 17.100
+  libavdevice    60.  4.100 / 60.  4.100
+  libavfilter     9. 13.100 /  9. 13.100
+  libswscale      7.  6.100 /  7.  6.100
+  libswresample   4. 13.100 /  4. 13.100
+  libpostproc    57.  4.100 / 57.  4.100
+[dshow @ 000002598982bb00] Could not run graph (sometimes caused by a device already in use by other application)
+[in#0 @ 00000259897de680] Error opening input: I/O error
+Error opening input file video=Surface Camera Rear.
+Error opening input files: I/O error
+
+2024-01-16 23:11:02,026 - ffmpeg_logger - ERROR - Error in command ffmpeg -f dshow -i video="Surface Camera Front" -c:v libx264 -crf 23 -preset veryfast -segment_time 10 -strftime 1 `output_surface_camera_front_%Y%m%d_%H%M%S.mp4`: ffmpeg version N-112750-g6d60cc7baf-20231114 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13.2.0 (crosstool-NG 1.25.0.232_c175b21)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20231114
+  libavutil      58. 32.100 / 58. 32.100
+  libavcodec     60. 33.100 / 60. 33.100
+  libavformat    60. 17.100 / 60. 17.100
+  libavdevice    60.  4.100 / 60.  4.100
+  libavfilter     9. 13.100 /  9. 13.100
+  libswscale      7.  6.100 /  7.  6.100
+  libswresample   4. 13.100 /  4. 13.100
+  libpostproc    57.  4.100 / 57.  4.100
+[dshow @ 0000026255cd85c0] Could not run graph (sometimes caused by a device already in use by other application)
+[in#0 @ 0000026255cb33c0] Error opening input: I/O error
+Error opening input file video=Surface Camera Front.
+Error opening input files: I/O error
+
+2024-01-16 23:11:40,773 - ffmpeg_logger - ERROR - Error in command ffmpeg -f dshow -i video="OBS Virtual Camera" -c:v libx264 -crf 23 -preset veryfast -segment_time 10 -strftime 1 `output_obs_virtual_camera_%Y%m%d_%H%M%S.mp4`: ffmpeg version N-112750-g6d60cc7baf-20231114 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13.2.0 (crosstool-NG 1.25.0.232_c175b21)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20231114
+  libavutil      58. 32.100 / 58. 32.100
+  libavcodec     60. 33.100 / 60. 33.100
+  libavformat    60. 17.100 / 60. 17.100
+  libavdevice    60.  4.100 / 60.  4.100
+  libavfilter     9. 13.100 /  9. 13.100
+  libswscale      7.  6.100 /  7.  6.100
+  libswresample   4. 13.100 /  4. 13.100
+  libpostproc    57.  4.100 / 57.  4.100
+Input #0, dshow, from 'video=OBS Virtual Camera':
+  Duration: N/A, start: 347566.186000, bitrate: N/A
+  Stream #0:0: Video: rawvideo (NV12 / 0x3231564E), nv12, 1920x1080, 30 fps, 30 tbr, 10000k tbn
+[AVFormatContext @ 0000026a2584e600] Unable to choose an output format for '`output_obs_virtual_camera_%Y%m%d_%H%M%S.mp4`'; use a standard extension for the filename or specify the format manually.
+[out#0 @ 0000026a258c60c0] Error initializing the muxer for `output_obs_virtual_camera_%Y%m%d_%H%M%S.mp4`: Invalid argument
+Error opening output file `output_obs_virtual_camera_%Y%m%d_%H%M%S.mp4`.
+Error opening output files: Invalid argument
+
+2024-01-16 23:11:40,992 - ffmpeg_logger - ERROR - Error in command ffmpeg -f dshow -i video="Surface Camera Front" -c:v libx264 -crf 23 -preset veryfast -segment_time 10 -strftime 1 `output_surface_camera_front_%Y%m%d_%H%M%S.mp4`: ffmpeg version N-112750-g6d60cc7baf-20231114 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13.2.0 (crosstool-NG 1.25.0.232_c175b21)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20231114
+  libavutil      58. 32.100 / 58. 32.100
+  libavcodec     60. 33.100 / 60. 33.100
+  libavformat    60. 17.100 / 60. 17.100
+  libavdevice    60.  4.100 / 60.  4.100
+  libavfilter     9. 13.100 /  9. 13.100
+  libswscale      7.  6.100 /  7.  6.100
+  libswresample   4. 13.100 /  4. 13.100
+  libpostproc    57.  4.100 / 57.  4.100
+[dshow @ 00000183f4df5ac0] Could not run graph (sometimes caused by a device already in use by other application)
+[in#0 @ 00000183f4dec440] Error opening input: I/O error
+Error opening input file video=Surface Camera Front.
+Error opening input files: I/O error
+
+2024-01-16 23:13:42,498 - ffmpeg_logger - ERROR - Error in command ffmpeg -f dshow -i video="Surface Camera Rear" -c:v libx264 -crf 23 -preset veryfast -segment_time 10 -strftime 1 `output_surface_camera_rear_%Y%m%d_%H%M%S.mp4`: ffmpeg version N-112750-g6d60cc7baf-20231114 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13.2.0 (crosstool-NG 1.25.0.232_c175b21)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20231114
+  libavutil      58. 32.100 / 58. 32.100
+  libavcodec     60. 33.100 / 60. 33.100
+  libavformat    60. 17.100 / 60. 17.100
+  libavdevice    60.  4.100 / 60.  4.100
+  libavfilter     9. 13.100 /  9. 13.100
+  libswscale      7.  6.100 /  7.  6.100
+  libswresample   4. 13.100 /  4. 13.100
+  libpostproc    57.  4.100 / 57.  4.100
+Input #0, dshow, from 'video=Surface Camera Rear':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 640x360, 30 fps, 30 tbr, 10000k tbn
+[AVFormatContext @ 00000202469b20c0] Unable to choose an output format for '`output_surface_camera_rear_%Y%m%d_%H%M%S.mp4`'; use a standard extension for the filename or specify the format manually.
+[out#0 @ 00000202469f5240] Error initializing the muxer for `output_surface_camera_rear_%Y%m%d_%H%M%S.mp4`: Invalid argument
+Error opening output file `output_surface_camera_rear_%Y%m%d_%H%M%S.mp4`.
+Error opening output files: Invalid argument
+Exiting normally, received signal 2.
+
+2024-01-16 23:13:42,659 - ffmpeg_logger - ERROR - Error in command ffmpeg -f dshow -i video="Surface Camera Front" -c:v libx264 -crf 23 -preset veryfast -segment_time 10 -strftime 1 `output_surface_camera_front_%Y%m%d_%H%M%S.mp4`: ffmpeg version N-112750-g6d60cc7baf-20231114 Copyright (c) 2000-2023 the FFmpeg developers
+  built with gcc 13.2.0 (crosstool-NG 1.25.0.232_c175b21)
+  configuration: --prefix=/ffbuild/prefix --pkg-config-flags=--static --pkg-config=pkg-config --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32 --enable-gpl --enable-version3 --disable-debug --disable-w32threads --enable-pthreads --enable-iconv --enable-libxml2 --enable-zlib --enable-libfreetype --enable-libfribidi --enable-gmp --enable-lzma --enable-fontconfig --enable-libharfbuzz --enable-libvorbis --enable-opencl --disable-libpulse --enable-libvmaf --disable-libxcb --disable-xlib --enable-amf --enable-libaom --enable-libaribb24 --enable-avisynth --enable-chromaprint --enable-libdav1d --enable-libdavs2 --disable-libfdk-aac --enable-ffnvcodec --enable-cuda-llvm --enable-frei0r --enable-libgme --enable-libkvazaar --enable-libaribcaption --enable-libass --enable-libbluray --enable-libjxl --enable-libmp3lame --enable-libopus --enable-librist --enable-libssh --enable-libtheora --enable-libvpx --enable-libwebp --enable-lv2 --enable-libvpl --enable-openal --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenh264 --enable-libopenjpeg --enable-libopenmpt --enable-librav1e --enable-librubberband --enable-schannel --enable-sdl2 --enable-libsoxr --enable-libsrt --enable-libsvtav1 --enable-libtwolame --enable-libuavs3d --disable-libdrm --enable-vaapi --enable-libvidstab --enable-vulkan --enable-libshaderc --enable-libplacebo --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxvid --enable-libzimg --enable-libzvbi --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldflags=-pthread --extra-ldexeflags= --extra-libs=-lgomp --extra-version=20231114
+  libavutil      58. 32.100 / 58. 32.100
+  libavcodec     60. 33.100 / 60. 33.100
+  libavformat    60. 17.100 / 60. 17.100
+  libavdevice    60.  4.100 / 60.  4.100
+  libavfilter     9. 13.100 /  9. 13.100
+  libswscale      7.  6.100 /  7.  6.100
+  libswresample   4. 13.100 /  4. 13.100
+  libpostproc    57.  4.100 / 57.  4.100
+Input #0, dshow, from 'video=Surface Camera Front':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: rawvideo (YUY2 / 0x32595559), yuyv422, 640x360, 30 fps, 30 tbr, 10000k tbn
+[AVFormatContext @ 0000026d94b35600] Unable to choose an output format for '`output_surface_camera_front_%Y%m%d_%H%M%S.mp4`'; use a standard extension for the filename or specify the format manually.
+[out#0 @ 0000026d92c24ac0] Error initializing the muxer for `output_surface_camera_front_%Y%m%d_%H%M%S.mp4`: Invalid argument
+Error opening output file `output_surface_camera_front_%Y%m%d_%H%M%S.mp4`.
+Error opening output files: Invalid argument
+Exiting normally, received signal 2.
+
