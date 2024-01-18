@@ -1,7 +1,7 @@
 # MultiCamRecorder
 
 ## 概要 
-**MultiCamRecorder** は、ffmpegを利用して複数のカメラからの映像ストリームを録画するツールです。
+**MultiCamRecorder** は、ffmpegを利用して複数のカメラからの映像ストリームを録画するツールです。\
 複数台のIPカメラを並列し録画したいという経緯で作成しました。
 
 ## インストール方法
