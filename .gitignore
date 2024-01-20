@@ -78,3 +78,7 @@ celerybeat.pid
 .venv/
 __pycache__/
 .vscode/
+
+# output_files
+*.mp4
+*.log
